@@ -3,7 +3,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://aclimconfort.com/",
+  site: "https://aclimconfort.com",
   integrations: [tailwind()],
   vite: {
     ssr: {
