@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import ContentSection from "~/components/content-section.astro";
-import ShowcaseCard from "~/components/showcase-card.astro";
+import ShowcaseCard from "~/components/gallery/showcase-card.astro";
 
 const featuredSites = await getCollection(
   "showcase",
@@ -12,7 +12,7 @@ const orderedSites = featuredSites.sort(
 );
 ---
 
-<ContentSection title="Showcase" id="showcase">
+<ContentSection title="Galerie" id="gallery">
   <Fragment slot="lead">
     Astro is <span class="text-primary">versatile</span>.{" "}
     <span class="text-primary">Explore</span> what's possible and get{" "}

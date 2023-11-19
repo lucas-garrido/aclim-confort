@@ -1,11 +1,11 @@
 ---
 import "@fontsource-variable/inter";
-import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
-import Footer from "~/components/footer.astro";
-import Header from "~/components/header.astro";
+import Compatibility from "~/components/contact/contact.astro";
+import Features from "~/components/services/features.astro";
+import Footer from "~/components/layout/footer.astro";
+import Header from "~/components/layout/header.astro";
 import Intro from "~/components/intro.astro";
-import Showcase from "~/components/showcase.astro";
+import Showcase from "~/components/gallery/gallery.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
@@ -66,8 +66,8 @@ const description =
     <div class="space-y-24 px-8 py-32">
       <Intro />
       <Features />
-      <Compatibility />
       <Showcase />
+      <Compatibility />
     </div>
     <Footer />
   </body>
